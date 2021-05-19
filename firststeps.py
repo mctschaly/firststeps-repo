@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 
+from decimal import Decimal
+from fractions import Fraction
 import sys
+import math
 
 print(sys.version)
 print(sys.executable)
@@ -29,3 +32,16 @@ def fac(n):
 
 
 print("100! = {}".format(fac(100)))
+
+
+def euler(n):
+    e = Fraction(0)
+    for i in range(n):
+        e = e + Fraction(1, fac(i))
+
+    return e
+
+
+print("e after 10 iterations is {}".format(euler(10)))
+print("e after 100 iterations is {}".format(euler(100)))
+print(Decimal(math.acos(-1)))
