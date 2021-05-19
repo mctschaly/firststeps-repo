@@ -1,4 +1,4 @@
-# encoding: utf-8
+# -*- coding: utf-8 -*-
 
 import sys
 
@@ -7,10 +7,15 @@ print(sys.executable)
 
 
 def greet(who_to_greet):
-    lago = "doof"
     greeting = "Griaß di, {}".format(who_to_greet)
     return greeting
 
 
+lago = "doof"
+
+
 print(greet("Welt"))
 print(greet("tschaly"))
+
+print("Lago is {}!".format(lago))
+print("script name is " + sys.argv[0])
