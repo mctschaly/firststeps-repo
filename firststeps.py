@@ -18,4 +18,14 @@ print(greet("Welt"))
 print(greet("tschaly"))
 
 print("Lago is {}!".format(lago))
-print("script name is " + sys.argv[0])
+print("script name is '{}'".format(sys.argv[0]))
+
+
+def fac(n):
+    if n <= 1:
+        return 1
+    else:
+        return fac(n - 1) * n
+
+
+print("100! = {}".format(fac(100)))
