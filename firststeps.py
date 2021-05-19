@@ -45,3 +45,17 @@ def euler(n):
 print("e after 10 iterations is {}".format(euler(10)))
 print("e after 100 iterations is {}".format(euler(100)))
 print(Decimal(math.acos(-1)))
+
+print("type of 1 is {}".format(type(1)))
+print("type of lago is {}".format(type(lago)))
+print("type of fac is {}".format(type(fac)))
+
+
+class Dog:
+    def sound(self):
+        print("bark")
+
+
+d = Dog()
+print(type(d))
+d.sound()
