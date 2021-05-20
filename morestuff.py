@@ -1,5 +1,5 @@
 def binom(n, k):
-    '''slowly calculate the binomial coefficient'''
+    """slowly calculate the binomial coefficient"""
     if n <= 0:
         return 1
     if n < 2 * k:
@@ -33,5 +33,6 @@ def fibList(n):  # write Fibonacci series up to n
 
 fibList(10000000)
 
-def fib(n):
 
+def fib(n):
+    pass
