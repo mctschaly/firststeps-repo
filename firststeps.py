@@ -52,10 +52,28 @@ print("type of fac is {}".format(type(fac)))
 
 
 class Dog:
+    def __init__(self, name):
+        self.name = name
+        self.lago = "doof dog"
+
     def sound(self):
-        print("bark")
+        print("bark {0}".format(self.name))
 
 
-d = Dog()
+d = Dog("Wuffi")
 print(type(d))
 d.sound()
+print(d.name)
+d.name = "Strolchi"
+d.sound()
+
+dogs = [Dog("Rex"), Dog("Flocki"), Dog("Bimbo"), d]
+
+for dog in dogs:
+    dog.sound()
+
+""" for name, lago in dogs.copy():
+    print(name, lago)
+
+d.items()
+ """
