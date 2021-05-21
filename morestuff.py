@@ -43,3 +43,5 @@ def fib(n):
 
 for n in range(31):
     print(n, fib(n))
+
+print(fib(10000))
