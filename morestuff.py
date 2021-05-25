@@ -1,3 +1,6 @@
+import seaborn
+
+
 def binom(n, k):
     """slowly calculate the binomial coefficient"""
     if n <= 0:
