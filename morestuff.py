@@ -1,3 +1,7 @@
+import os
+import sys
+
+
 def binom(n, k):
     """slowly calculate the binomial coefficient"""
     if n <= 0:
@@ -45,3 +49,10 @@ for n in range(31):
     print(n, fib(n))
 
 print(fib(10000))
+
+
+print("os name =", os.name)
+print("os uname =", os.uname())
+print("platform =", sys.platform)
+print("termid =", os.ctermid())
+print("cwd =", os.getcwd())
