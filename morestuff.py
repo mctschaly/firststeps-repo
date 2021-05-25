@@ -53,7 +53,12 @@ print(fib(10000))
 
 
 print("os name =", os.name)
-print("os uname =", os.uname())
+if os.name != "nt":
+    print("os uname =", os.uname())
+    print("termid =", os.ctermid())
+else:
+    print("os uname = ???")
+    print("termid = ???")
+
 print("platform =", sys.platform)
-print("termid =", os.ctermid())
 print("cwd =", os.getcwd())
