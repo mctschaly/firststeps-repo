@@ -1,6 +1,6 @@
 import os
 import sys
-import seaborn
+import seaborn as sns
 
 
 def binom(n, k):
@@ -62,3 +62,7 @@ else:
 
 print("platform =", sys.platform)
 print("cwd =", os.getcwd())
+
+sns.set_theme()
+
+# tips = sns.load_dataset("tips")
