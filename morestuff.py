@@ -66,3 +66,12 @@ print("cwd =", os.getcwd())
 sns.set_theme()
 
 # tips = sns.load_dataset("tips")
+
+
+def ann(ham: str, eggs: str = "a dozen") -> str:
+    print("Annotations:", ann.__annotations__)
+    print("Arguments:", ham, eggs)
+    return ham + " and " + eggs
+
+
+ann("Lago")
