@@ -51,7 +51,6 @@ for n in range(31):
 
 print(fib(10000))
 
-
 print("os name =", os.name)
 if os.name != "nt":
     print("os uname =", os.uname())
